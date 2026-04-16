@@ -821,6 +821,30 @@ a { color: inherit; text-decoration: none; }
     flex: 1 1 240px;
   }
 
+  .filter-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .filter-btn {
+    width: auto;
+    flex: 1 1 auto;
+  }
+
+  .stats-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+  }
+
+  .stat-item {
+    flex: 1 1 auto;
+    border-block-end: none;
+    background: var(--clr-bg-primary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--clr-border);
+  }
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
