@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- =============================================
+       META SEO - Redactado manualmente (sin IA)
+       Restricción Anti-IA: metadatos escritos a mano
+  ============================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO primario -->
+  <title>Galería de Proyectos Técnicos | IS093A - UNCP</title>
+  <meta name="description" content="Galería de proyectos técnicos de estudiantes de Ingeniería de Sistemas - UNCP. Implementación con HTML5 semántico, CSS Grid, Flexbox y diseño responsivo avanzado." />
+  <meta name="keywords" content="proyectos tecnicos, ingenieria de sistemas, UNCP, HTML5, CSS Grid, Flexbox, diseño responsivo" />
+  <meta name="author" content="IS093A - Desarrollo de Aplicaciones Web" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Galería de Proyectos Técnicos | IS093A" />
+  <meta property="og:description" content="Proyectos desarrollados por estudiantes de Ingeniería de Sistemas de la UNCP." />
+  <meta property="og:locale" content="es_PE" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://sullit0.github.io/semana2/" />
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Fonts: tipografía moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body
+  data-category="galeria-proyectos"
+  data-version="1.0.0"
+  data-source="xml-simulado"
+  data-semester="2026-I"
+  data-course="IS093A"
+>
+
+  <!-- Skip link para accesibilidad WCAG 2.1 (visible al foco) -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- =============================================
+       HEADER
+  ============================================= -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand" aria-label="Identidad del sitio">
+        <span class="brand-icon" aria-hidden="true">⬡</span>
+        <div class="brand-text">
+          <span class="brand-name">TechGallery</span>
+          <span class="brand-subtitle">IS093A · UNCP</span>
+        </div>
+      </div>
+
+      <!-- NAV principal con Flexbox (Paso 3) -->
+      <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+        <ul class="nav-list" role="list">
+          <li><a href="#proyectos" class="nav-link" aria-current="page">Proyectos</a></li>
+          <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+          <li><a href="#equipo" class="nav-link">Equipo</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-list"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =============================================
+       MAIN - Grid principal (grid-template-areas)
+  ============================================= -->
+  <main id="contenido-principal" class="site-layout" role="main">
+
+    <!-- HERO (área: hero) -->
+    <section
+      class="hero"
+      aria-labelledby="hero-title"
+      data-section="hero"
+      data-xml-id="sec-001"
+    >
+      <div class="hero-content">
+        <span class="hero-badge" aria-label="Semana 2 - Guía Práctica">Semana 02 · Práctica</span>
+        <h1 id="hero-title" class="hero-title">
+          Galería de<br />
+          <span class="gradient-text">Proyectos Técnicos</span>
+        </h1>
+        <p class="hero-description">
+          Implementación con HTML5 semántico, CSS Grid + Flexbox,
+          tipografía fluida y diseño responsivo avanzado con Container Queries.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#tecnologias" class="btn btn-ghost">Tecnologías</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="code-preview">
+          <div class="code-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-filename">index.html</span>
+          </div>
+          <pre class="code-body"><code>&lt;main class="grid-layout"&gt;
+  &lt;header <span class="kw">role</span>="banner"&gt;
+    &lt;nav <span class="kw">aria-label</span>="main"&gt;
+  &lt;section <span class="kw">data-xml-id</span>="sec-001"&gt;
+    &lt;article <span class="kw">lang</span>="es"&gt;
+      &lt;h2&gt;Proyecto Alpha&lt;/h2&gt;</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIDEBAR (área: sidebar) -->
+    <aside
+      class="sidebar"
+      aria-label="Filtros y estadísticas"
+      data-section="sidebar"
+      data-xml-id="sec-002"
+    >
+      <div class="sidebar-block">
+        <h2 class="sidebar-title">Filtrar por</h2>
+        <ul class="filter-list" role="list" aria-label="Categorías de proyectos">
+          <li>
+            <button class="filter-btn active" aria-pressed="true" data-filter="all">
+              Todos <span class="badge">6</span>
+            </button>
+          </li>
+          <li>
+            <button class="filter-btn" aria-pressed="false" data-filter="web">
+              Web <span class="badge">3</span>
+            </button>
+          </li>
+          <li>
+            <button class="filter-btn" aria-pressed="false" data-filter="mobile">
+              Mobile <span class="badge">2</span>
+            </button>
+          </li>
+          <li>
+            <button class="filter-btn" aria-pressed="false" data-filter="data">
+              Data <span class="badge">1</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-block">
+        <h2 class="sidebar-title">Estadísticas</h2>
+        <dl class="stats-list">
+          <div class="stat-item">
+            <dt class="stat-label">Proyectos</dt>
+            <dd class="stat-value" data-stat="projects">6</dd>
+          </div>
+          <div class="stat-item">
+            <dt class="stat-label">Tecnologías</dt>
+            <dd class="stat-value" data-stat="techs">12</dd>
+          </div>
+          <div class="stat-item">
+            <dt class="stat-label">Líneas de código</dt>
+            <dd class="stat-value" data-stat="lines">2,480</dd>
+          </div>
+        </dl>
+      </div>
+    </aside>
+
+    <!-- GALERÍA DE PROYECTOS (área: content) -->
+    <section
+      id="proyectos"
+      class="gallery-section"
+      aria-labelledby="gallery-title"
+      data-section="gallery"
+      data-xml-id="sec-003"
+      data-category="proyectos-tecnicos"
+    >
+      <h2 id="gallery-title" class="section-title">Proyectos Destacados</h2>
+
+      <!-- Cards con Flexbox interno -->
+      <div class="cards-grid" role="list" aria-label="Lista de proyectos técnicos">
+
+        <!-- Card 1 -->
+        <article
+          class="card"
+          role="listitem"
+          data-project-id="proj-001"
+          data-tech="HTML,CSS,JS"
+          data-category="web"
+        >
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🌐</span>
+            <div class="card-tags">
+              <span class="tag tag-web">Web</span>
+              <span class="tag tag-featured">Destacado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Sistema de Gestión Académica</h3>
+            <p class="card-description">
+              Plataforma web para administración de notas, horarios y asistencia
+              de estudiantes universitarios con interfaz responsiva.
+            </p>
+            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
+              <li class="tech-pill">HTML5</li>
+              <li class="tech-pill">CSS Grid</li>
+              <li class="tech-pill">JavaScript</li>
+            </ul>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-link" aria-label="Ver demo del proyecto Sistema de Gestión Académica">
+              Ver demo <span aria-hidden="true">→</span>
+            </a>
+            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código del proyecto Sistema de Gestión Académica en GitHub">
+              GitHub
+            </a>
+          </footer>
+        </article>
+
+        <!-- Card 2 -->
+        <article
+          class="card"
+          role="listitem"
+          data-project-id="proj-002"
+          data-tech="React,Node,MongoDB"
+          data-category="web"
+        >
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🛒</span>
+            <div class="card-tags">
+              <span class="tag tag-web">Web</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">E-Commerce Agrícola</h3>
+            <p class="card-description">
+              Tienda online para productores agrícolas de Junín con carrito de compras,
+              pagos integrados y panel de administración.
+            </p>
+            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
+              <li class="tech-pill">React</li>
+              <li class="tech-pill">Node.js</li>
+              <li class="tech-pill">MongoDB</li>
+            </ul>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-link" aria-label="Ver demo del proyecto E-Commerce Agrícola">
+              Ver demo <span aria-hidden="true">→</span>
+            </a>
+            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código en GitHub">
+              GitHub
+            </a>
+          </footer>
+        </article>
+
+        <!-- Card 3 -->
+        <article
+          class="card"
+          role="listitem"
+          data-project-id="proj-003"
+          data-tech="Flutter,Firebase"
+          data-category="mobile"
+        >
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">📱</span>
+            <div class="card-tags">
+              <span class="tag tag-mobile">Mobile</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">App de Transporte Urbano</h3>
+            <p class="card-description">
+              Aplicación móvil para seguimiento en tiempo real de rutas de transporte
+              público en la ciudad de Huancayo.
+            </p>
+            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
+              <li class="tech-pill">Flutter</li>
+              <li class="tech-pill">Firebase</li>
+              <li class="tech-pill">Maps API</li>
+            </ul>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-link" aria-label="Ver demo de App de Transporte Urbano">
+              Ver demo <span aria-hidden="true">→</span>
+            </a>
+            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código en GitHub">
+              GitHub
+            </a>
+          </footer>
+        </article>
+
+        <!-- Card 4 -->
+        <article
+          class="card"
+          role="listitem"
+          data-project-id="proj-004"
+          data-tech="Python,FastAPI,PostgreSQL"
+          data-category="data"
+        >
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">📊</span>
+            <div class="card-tags">
+              <span class="tag tag-data">Data</span>
+              <span class="tag tag-featured">Destacado</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Dashboard Analítico</h3>
+            <p class="card-description">
+              Panel de visualización de datos para instituciones educativas con
+              reportes automáticos y predicciones estadísticas.
+            </p>
+            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
+              <li class="tech-pill">Python</li>
+              <li class="tech-pill">FastAPI</li>
+              <li class="tech-pill">PostgreSQL</li>
+            </ul>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-link" aria-label="Ver demo del Dashboard Analítico">
+              Ver demo <span aria-hidden="true">→</span>
+            </a>
+            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código en GitHub">
+              GitHub
+            </a>
+          </footer>
+        </article>
+
+        <!-- Card 5 -->
+        <article
+          class="card"
+          role="listitem"
+          data-project-id="proj-005"
+          data-tech="Android,Java,SQLite"
+          data-category="mobile"
+        >
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🏥</span>
+            <div class="card-tags">
+              <span class="tag tag-mobile">Mobile</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">HealthTrack App</h3>
+            <p class="card-description">
+              Aplicación para monitoreo de salud personal con historial médico,
+              recordatorio de medicamentos e integración con sensores.
+            </p>
+            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
+              <li class="tech-pill">Android</li>
+              <li class="tech-pill">Java</li>
+              <li class="tech-pill">SQLite</li>
+            </ul>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-link" aria-label="Ver demo de HealthTrack App">
+              Ver demo <span aria-hidden="true">→</span>
+            </a>
+            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código en GitHub">
+              GitHub
+            </a>
+          </footer>
+        </article>
+
+        <!-- Card 6 -->
+        <article
+          class="card"
+          role="listitem"
+          data-project-id="proj-006"
+          data-tech="Vue,Laravel,MySQL"
+          data-category="web"
+        >
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">📚</span>
+            <div class="card-tags">
+              <span class="tag tag-web">Web</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Biblioteca Digital UNCP</h3>
+            <p class="card-description">
+              Sistema de gestión de biblioteca universitaria con catálogo en línea,
+              reservas y préstamos digitales de recursos académicos.
+            </p>
+            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
+              <li class="tech-pill">Vue.js</li>
+              <li class="tech-pill">Laravel</li>
+              <li class="tech-pill">MySQL</li>
+            </ul>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-link" aria-label="Ver demo de Biblioteca Digital UNCP">
+              Ver demo <span aria-hidden="true">→</span>
+            </a>
+            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código en GitHub">
+              GitHub
+            </a>
+          </footer>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN TECNOLOGÍAS (área: tech) -->
+    <section
+      id="tecnologias"
+      class="tech-section"
+      aria-labelledby="tech-title"
+      data-section="tecnologias"
+      data-xml-id="sec-004"
+    >
+      <h2 id="tech-title" class="section-title">Stack Tecnológico</h2>
+      <div class="tech-grid" role="list" aria-label="Tecnologías del stack">
+        <div class="tech-card" role="listitem" data-tech-category="frontend">
+          <span class="tech-logo" aria-hidden="true">🏗️</span>
+          <h3 class="tech-name">HTML5</h3>
+          <p class="tech-desc">Estructura semántica y accesibilidad WCAG 2.1</p>
+          <div class="tech-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de uso de HTML5: 95%">
+            <div class="tech-bar-fill" style="--level: 95%"></div>
+          </div>
+        </div>
+        <div class="tech-card" role="listitem" data-tech-category="frontend">
+          <span class="tech-logo" aria-hidden="true">🎨</span>
+          <h3 class="tech-name">CSS3</h3>
+          <p class="tech-desc">Grid, Flexbox, Container Queries, clamp()</p>
+          <div class="tech-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de uso de CSS3: 90%">
+            <div class="tech-bar-fill" style="--level: 90%"></div>
+          </div>
+        </div>
+        <div class="tech-card" role="listitem" data-tech-category="frontend">
+          <span class="tech-logo" aria-hidden="true">⚡</span>
+          <h3 class="tech-name">JavaScript</h3>
+          <p class="tech-desc">ES2023, módulos, Fetch API, DOM events</p>
+          <div class="tech-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de uso de JavaScript: 85%">
+            <div class="tech-bar-fill" style="--level: 85%"></div>
+          </div>
+        </div>
+        <div class="tech-card" role="listitem" data-tech-category="backend">
+          <span class="tech-logo" aria-hidden="true">🟢</span>
+          <h3 class="tech-name">Node.js</h3>
+          <p class="tech-desc">API REST, Express, autenticación JWT</p>
+          <div class="tech-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de uso de Node.js: 78%">
+            <div class="tech-bar-fill" style="--level: 78%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon" aria-hidden="true">⬡</span>
+        <p class="footer-text">
+          <strong>TechGallery · IS093A</strong><br />
+          Facultad de Ingeniería de Sistemas · UNCP
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <a href="https://github.com/Sullit0" class="footer-link" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        <a href="#contenido-principal" class="footer-link">Inicio</a>
+        <a href="#proyectos" class="footer-link">Proyectos</a>
+      </nav>
+      <p class="footer-copy">
+        <small>© 2026 IS093A - Semana 02 · Todos los derechos reservados</small>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
