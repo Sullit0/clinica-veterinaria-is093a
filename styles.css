@@ -887,8 +887,8 @@ a { color: inherit; text-decoration: none; }
    Fallback: los estilos base (ver .card) se aplican
    cuando @container no es reconocido (graceful degradation)
    IA: consulta compatibilidad → Corrección manual: añadido fallback
-   /* IA: "Compatibilidad de container-type:inline-size" →
-      Corrección manual: fallback con media query equivalente */
+   IA: "Compatibilidad de container-type:inline-size" →
+      Corrección manual: fallback con media query equivalente
    ================================================ */
 
 /* @container para .card */
