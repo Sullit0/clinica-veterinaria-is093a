@@ -9,20 +9,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO primario -->
-  <title>Galería de Proyectos Técnicos | IS093A - UNCP</title>
-  <meta name="description" content="Galería de proyectos técnicos de estudiantes de Ingeniería de Sistemas - UNCP. Implementación con HTML5 semántico, CSS Grid, Flexbox y diseño responsivo avanzado." />
-  <meta name="keywords" content="proyectos tecnicos, ingenieria de sistemas, UNCP, HTML5, CSS Grid, Flexbox, diseño responsivo" />
-  <meta name="author" content="IS093A - Desarrollo de Aplicaciones Web" />
+  <title>Clínica Veterinaria "Patitas Felices" | Cuidado integral para mascotas</title>
+  <meta name="description" content="En Clínica Veterinaria Patitas Felices ofrecemos servicios médicos, estética y emergencias 24/7 para perros, gatos y animales exóticos. Aplicación web IS093A." />
+  <meta name="keywords" content="veterinaria, mascotas, perros, gatos, animales exoticos, consultas, clinica, huancayo" />
+  <meta name="author" content="Equipo IS093A" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph / redes sociales -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Galería de Proyectos Técnicos | IS093A" />
-  <meta property="og:description" content="Proyectos desarrollados por estudiantes de Ingeniería de Sistemas de la UNCP." />
+  <meta property="og:title" content="Clínica Veterinaria Patitas Felices" />
+  <meta property="og:description" content="El mejor cuidado para los mimados de la casa. Citas en línea." />
   <meta property="og:locale" content="es_PE" />
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://sullit0.github.io/semana2/" />
+  <link rel="canonical" href="https://sullit0.github.io/semana2-vet/" />
 
   <!-- Hoja de estilos -->
   <link rel="stylesheet" href="styles.css" />
@@ -30,12 +30,12 @@
   <!-- Google Fonts: tipografía moderna -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito:wght@600;800&display=swap" rel="stylesheet" />
 </head>
 
 <body
-  data-category="galeria-proyectos"
-  data-version="1.0.0"
+  data-category="veterinaria-servicios"
+  data-version="1.1.0"
   data-source="xml-simulado"
   data-semester="2026-I"
   data-course="IS093A"
@@ -50,19 +50,19 @@
   <header class="site-header" role="banner">
     <div class="header-inner">
       <div class="brand" aria-label="Identidad del sitio">
-        <span class="brand-icon" aria-hidden="true">⬡</span>
+        <span class="brand-icon" aria-hidden="true">🐾</span>
         <div class="brand-text">
-          <span class="brand-name">TechGallery</span>
-          <span class="brand-subtitle">IS093A · UNCP</span>
+          <span class="brand-name">Patitas Felices</span>
+          <span class="brand-subtitle">Clínica Veterinaria</span>
         </div>
       </div>
 
       <!-- NAV principal con Flexbox (Paso 3) -->
       <nav class="main-nav" role="navigation" aria-label="Navegación principal">
         <ul class="nav-list" role="list">
-          <li><a href="#proyectos" class="nav-link" aria-current="page">Proyectos</a></li>
-          <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
-          <li><a href="#equipo" class="nav-link">Equipo</a></li>
+          <li><a href="#servicios" class="nav-link" aria-current="page">Servicios</a></li>
+          <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
           <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
         <button
@@ -92,34 +92,25 @@
       data-xml-id="sec-001"
     >
       <div class="hero-content">
-        <span class="hero-badge" aria-label="Semana 2 - Guía Práctica">Semana 02 · Práctica</span>
+        <span class="hero-badge" aria-label="Atención 24/7">Emergencias 24h</span>
         <h1 id="hero-title" class="hero-title">
-          Galería de<br />
-          <span class="gradient-text">Proyectos Técnicos</span>
+          Cuidamos a los <br />
+          <span class="gradient-text">Mimados de la Casa</span>
         </h1>
         <p class="hero-description">
-          Implementación con HTML5 semántico, CSS Grid + Flexbox,
-          tipografía fluida y diseño responsivo avanzado con Container Queries.
+          Ofrecemos atención médica integral, vacunas, estética y cirugía especializada para 
+          tu mejor amigo, con la mejor tecnología y calidez humana.
         </p>
         <div class="hero-actions">
-          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-          <a href="#tecnologias" class="btn btn-ghost">Tecnologías</a>
+          <a href="#contacto" class="btn btn-primary">Agendar Cita</a>
+          <a href="#servicios" class="btn btn-ghost">Nuestros Servicios</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
-        <div class="code-preview">
-          <div class="code-header">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-            <span class="code-filename">index.html</span>
-          </div>
-          <pre class="code-body"><code>&lt;main class="grid-layout"&gt;
-  &lt;header <span class="kw">role</span>="banner"&gt;
-    &lt;nav <span class="kw">aria-label</span>="main"&gt;
-  &lt;section <span class="kw">data-xml-id</span>="sec-001"&gt;
-    &lt;article <span class="kw">lang</span>="es"&gt;
-      &lt;h2&gt;Proyecto Alpha&lt;/h2&gt;</code></pre>
+        <div class="vet-badge-container">
+          <div class="vet-icon-large">🐕🩺</div>
+          <div class="floating-pill pill-1">Amor y cuidado</div>
+          <div class="floating-pill pill-2">Médicos Especialistas</div>
         </div>
       </div>
     </section>
@@ -127,102 +118,94 @@
     <!-- SIDEBAR (área: sidebar) -->
     <aside
       class="sidebar"
-      aria-label="Filtros y estadísticas"
+      aria-label="Filtros de servicios"
       data-section="sidebar"
       data-xml-id="sec-002"
     >
       <div class="sidebar-block">
-        <h2 class="sidebar-title">Filtrar por</h2>
-        <ul class="filter-list" role="list" aria-label="Categorías de proyectos">
+        <h2 class="sidebar-title">Filtrar por Paciente</h2>
+        <ul class="filter-list" role="list" aria-label="Especies atendidas">
           <li>
             <button class="filter-btn active" aria-pressed="true" data-filter="all">
               Todos <span class="badge">6</span>
             </button>
           </li>
           <li>
-            <button class="filter-btn" aria-pressed="false" data-filter="web">
-              Web <span class="badge">3</span>
+            <button class="filter-btn" aria-pressed="false" data-filter="perros">
+              Perros <span class="badge">3</span>
             </button>
           </li>
           <li>
-            <button class="filter-btn" aria-pressed="false" data-filter="mobile">
-              Mobile <span class="badge">2</span>
+            <button class="filter-btn" aria-pressed="false" data-filter="gatos">
+              Gatos <span class="badge">2</span>
             </button>
           </li>
           <li>
-            <button class="filter-btn" aria-pressed="false" data-filter="data">
-              Data <span class="badge">1</span>
+            <button class="filter-btn" aria-pressed="false" data-filter="exoticos">
+              Exóticos <span class="badge">1</span>
             </button>
           </li>
         </ul>
       </div>
 
       <div class="sidebar-block">
-        <h2 class="sidebar-title">Estadísticas</h2>
+        <h2 class="sidebar-title">Nuestra Clínica</h2>
         <dl class="stats-list">
           <div class="stat-item">
-            <dt class="stat-label">Proyectos</dt>
-            <dd class="stat-value" data-stat="projects">6</dd>
+            <dt class="stat-label">Pacientes felices</dt>
+            <dd class="stat-value" data-stat="projects">5k+</dd>
           </div>
           <div class="stat-item">
-            <dt class="stat-label">Tecnologías</dt>
+            <dt class="stat-label">Especialistas</dt>
             <dd class="stat-value" data-stat="techs">12</dd>
           </div>
           <div class="stat-item">
-            <dt class="stat-label">Líneas de código</dt>
-            <dd class="stat-value" data-stat="lines">2,480</dd>
+            <dt class="stat-label">Años de exp.</dt>
+            <dd class="stat-value" data-stat="lines">15</dd>
           </div>
         </dl>
       </div>
     </aside>
 
-    <!-- GALERÍA DE PROYECTOS (área: content) -->
+    <!-- GALERÍA DE PROYECTOS / SERVICIOS (área: content) -->
     <section
-      id="proyectos"
+      id="servicios"
       class="gallery-section"
       aria-labelledby="gallery-title"
       data-section="gallery"
       data-xml-id="sec-003"
-      data-category="proyectos-tecnicos"
     >
-      <h2 id="gallery-title" class="section-title">Proyectos Destacados</h2>
+      <h2 id="gallery-title" class="section-title">Servicios Destacados</h2>
 
       <!-- Cards con Flexbox interno -->
-      <div class="cards-grid" role="list" aria-label="Lista de proyectos técnicos">
+      <div class="cards-grid" role="list" aria-label="Lista de servicios veterinarios">
 
         <!-- Card 1 -->
         <article
           class="card"
           role="listitem"
-          data-project-id="proj-001"
-          data-tech="HTML,CSS,JS"
-          data-category="web"
+          data-category="perros"
         >
           <div class="card-header">
-            <span class="card-icon" aria-hidden="true">🌐</span>
+            <span class="card-icon" aria-hidden="true">🐶</span>
             <div class="card-tags">
-              <span class="tag tag-web">Web</span>
-              <span class="tag tag-featured">Destacado</span>
+              <span class="tag tag-perros">Perros</span>
+              <span class="tag tag-featured">Popular</span>
             </div>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Sistema de Gestión Académica</h3>
+            <h3 class="card-title">Consulta General Canina</h3>
             <p class="card-description">
-              Plataforma web para administración de notas, horarios y asistencia
-              de estudiantes universitarios con interfaz responsiva.
+              Chequeo integral de salud, evaluación nutricional, esquema de vacunación y desparasitación para canes de todas las edades.
             </p>
-            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
-              <li class="tech-pill">HTML5</li>
-              <li class="tech-pill">CSS Grid</li>
-              <li class="tech-pill">JavaScript</li>
+            <ul class="tech-stack" aria-label="Beneficios">
+              <li class="tech-pill">Prevención</li>
+              <li class="tech-pill">Vacunas</li>
             </ul>
           </div>
           <footer class="card-footer">
-            <a href="#" class="card-link" aria-label="Ver demo del proyecto Sistema de Gestión Académica">
-              Ver demo <span aria-hidden="true">→</span>
-            </a>
-            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código del proyecto Sistema de Gestión Académica en GitHub">
-              GitHub
+            <a href="#" class="card-link" aria-label="Más detalles sobre Consulta General Canina">
+              Más detalles <span aria-hidden="true">→</span>
             </a>
           </footer>
         </article>
@@ -231,34 +214,27 @@
         <article
           class="card"
           role="listitem"
-          data-project-id="proj-002"
-          data-tech="React,Node,MongoDB"
-          data-category="web"
+          data-category="gatos"
         >
           <div class="card-header">
-            <span class="card-icon" aria-hidden="true">🛒</span>
+            <span class="card-icon" aria-hidden="true">🐱</span>
             <div class="card-tags">
-              <span class="tag tag-web">Web</span>
+              <span class="tag tag-gatos">Gatos</span>
             </div>
           </div>
           <div class="card-body">
-            <h3 class="card-title">E-Commerce Agrícola</h3>
+            <h3 class="card-title">Medicina Felina Especializada</h3>
             <p class="card-description">
-              Tienda online para productores agrícolas de Junín con carrito de compras,
-              pagos integrados y panel de administración.
+              Contamos con un sector libre de estrés (Cat Friendly) dedicado exclusivamente al diagnóstico y tratamiento de michis.
             </p>
-            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
-              <li class="tech-pill">React</li>
-              <li class="tech-pill">Node.js</li>
-              <li class="tech-pill">MongoDB</li>
+            <ul class="tech-stack" aria-label="Beneficios">
+              <li class="tech-pill">Cat Friendly</li>
+              <li class="tech-pill">Ecografía</li>
             </ul>
           </div>
           <footer class="card-footer">
-            <a href="#" class="card-link" aria-label="Ver demo del proyecto E-Commerce Agrícola">
-              Ver demo <span aria-hidden="true">→</span>
-            </a>
-            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código en GitHub">
-              GitHub
+            <a href="#" class="card-link" aria-label="Más detalles sobre Medicina Felina">
+              Más detalles <span aria-hidden="true">→</span>
             </a>
           </footer>
         </article>
@@ -267,34 +243,27 @@
         <article
           class="card"
           role="listitem"
-          data-project-id="proj-003"
-          data-tech="Flutter,Firebase"
-          data-category="mobile"
+          data-category="exoticos"
         >
           <div class="card-header">
-            <span class="card-icon" aria-hidden="true">📱</span>
+            <span class="card-icon" aria-hidden="true">🦜</span>
             <div class="card-tags">
-              <span class="tag tag-mobile">Mobile</span>
+              <span class="tag tag-exoticos">Exóticos</span>
             </div>
           </div>
           <div class="card-body">
-            <h3 class="card-title">App de Transporte Urbano</h3>
+            <h3 class="card-title">Atención de Exóticos</h3>
             <p class="card-description">
-              Aplicación móvil para seguimiento en tiempo real de rutas de transporte
-              público en la ciudad de Huancayo.
+              Profesionales especializados en aves, reptiles y pequeños mamíferos (conejos, roedores, hurones).
             </p>
-            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
-              <li class="tech-pill">Flutter</li>
-              <li class="tech-pill">Firebase</li>
-              <li class="tech-pill">Maps API</li>
+            <ul class="tech-stack" aria-label="Beneficios">
+              <li class="tech-pill">Nutrición</li>
+              <li class="tech-pill">Cirugía</li>
             </ul>
           </div>
           <footer class="card-footer">
-            <a href="#" class="card-link" aria-label="Ver demo de App de Transporte Urbano">
-              Ver demo <span aria-hidden="true">→</span>
-            </a>
-            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código en GitHub">
-              GitHub
+            <a href="#" class="card-link" aria-label="Más detalles sobre Atención de Exóticos">
+              Más detalles <span aria-hidden="true">→</span>
             </a>
           </footer>
         </article>
@@ -303,35 +272,28 @@
         <article
           class="card"
           role="listitem"
-          data-project-id="proj-004"
-          data-tech="Python,FastAPI,PostgreSQL"
-          data-category="data"
+          data-category="perros"
         >
           <div class="card-header">
-            <span class="card-icon" aria-hidden="true">📊</span>
+            <span class="card-icon" aria-hidden="true">✂️</span>
             <div class="card-tags">
-              <span class="tag tag-data">Data</span>
-              <span class="tag tag-featured">Destacado</span>
+              <span class="tag tag-perros">Perros</span>
+              <span class="tag tag-featured">Estética</span>
             </div>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Dashboard Analítico</h3>
+            <h3 class="card-title">Spa & Grooming Canino</h3>
             <p class="card-description">
-              Panel de visualización de datos para instituciones educativas con
-              reportes automáticos y predicciones estadísticas.
+              Baños medicados, cortes de raza, limpieza dental preventiva y corte de uñas para que luzca radiante.
             </p>
-            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
-              <li class="tech-pill">Python</li>
-              <li class="tech-pill">FastAPI</li>
-              <li class="tech-pill">PostgreSQL</li>
+            <ul class="tech-stack" aria-label="Beneficios">
+              <li class="tech-pill">Baño Inclusivo</li>
+              <li class="tech-pill">Corte de raza</li>
             </ul>
           </div>
           <footer class="card-footer">
-            <a href="#" class="card-link" aria-label="Ver demo del Dashboard Analítico">
-              Ver demo <span aria-hidden="true">→</span>
-            </a>
-            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código en GitHub">
-              GitHub
+            <a href="#" class="card-link" aria-label="Más detalles sobre Spa Canino">
+              Más detalles <span aria-hidden="true">→</span>
             </a>
           </footer>
         </article>
@@ -340,34 +302,27 @@
         <article
           class="card"
           role="listitem"
-          data-project-id="proj-005"
-          data-tech="Android,Java,SQLite"
-          data-category="mobile"
+          data-category="perros"
         >
           <div class="card-header">
             <span class="card-icon" aria-hidden="true">🏥</span>
             <div class="card-tags">
-              <span class="tag tag-mobile">Mobile</span>
+              <span class="tag tag-perros">Perros</span>
             </div>
           </div>
           <div class="card-body">
-            <h3 class="card-title">HealthTrack App</h3>
+            <h3 class="card-title">Traumatología y Ortopedia</h3>
             <p class="card-description">
-              Aplicación para monitoreo de salud personal con historial médico,
-              recordatorio de medicamentos e integración con sensores.
+              Tratamiento de fracturas, displasias y problemas articulares. Rehabilitación fisioterapéutica post-cirugía.
             </p>
-            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
-              <li class="tech-pill">Android</li>
-              <li class="tech-pill">Java</li>
-              <li class="tech-pill">SQLite</li>
+            <ul class="tech-stack" aria-label="Beneficios">
+              <li class="tech-pill">Rayos X</li>
+              <li class="tech-pill">Rehab</li>
             </ul>
           </div>
           <footer class="card-footer">
-            <a href="#" class="card-link" aria-label="Ver demo de HealthTrack App">
-              Ver demo <span aria-hidden="true">→</span>
-            </a>
-            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código en GitHub">
-              GitHub
+            <a href="#" class="card-link" aria-label="Más detalles sobre Traumatología">
+              Más detalles <span aria-hidden="true">→</span>
             </a>
           </footer>
         </article>
@@ -376,34 +331,27 @@
         <article
           class="card"
           role="listitem"
-          data-project-id="proj-006"
-          data-tech="Vue,Laravel,MySQL"
-          data-category="web"
+          data-category="gatos"
         >
           <div class="card-header">
-            <span class="card-icon" aria-hidden="true">📚</span>
+            <span class="card-icon" aria-hidden="true">🔬</span>
             <div class="card-tags">
-              <span class="tag tag-web">Web</span>
+              <span class="tag tag-gatos">Gatos</span>
             </div>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Biblioteca Digital UNCP</h3>
+            <h3 class="card-title">Laboratorio Clínico Propio</h3>
             <p class="card-description">
-              Sistema de gestión de biblioteca universitaria con catálogo en línea,
-              reservas y préstamos digitales de recursos académicos.
+              Exámenes de sangre, descartes de leucemia felina (ViLeF) e inmunodeficiencia. Resultados en minutos.
             </p>
-            <ul class="tech-stack" aria-label="Tecnologías utilizadas">
-              <li class="tech-pill">Vue.js</li>
-              <li class="tech-pill">Laravel</li>
-              <li class="tech-pill">MySQL</li>
+            <ul class="tech-stack" aria-label="Beneficios">
+              <li class="tech-pill">Diagnóstico rápido</li>
+              <li class="tech-pill">Test Rápidos</li>
             </ul>
           </div>
           <footer class="card-footer">
-            <a href="#" class="card-link" aria-label="Ver demo de Biblioteca Digital UNCP">
-              Ver demo <span aria-hidden="true">→</span>
-            </a>
-            <a href="https://github.com" class="card-link card-link-ghost" aria-label="Ver código en GitHub">
-              GitHub
+            <a href="#" class="card-link" aria-label="Más detalles sobre Laboratorio">
+              Más detalles <span aria-hidden="true">→</span>
             </a>
           </footer>
         </article>
@@ -411,47 +359,35 @@
       </div>
     </section>
 
-    <!-- SECCIÓN TECNOLOGÍAS (área: tech) -->
+    <!-- SECCIÓN ESPECIALIDADES (área: tech) -->
     <section
-      id="tecnologias"
+      id="especialidades"
       class="tech-section"
       aria-labelledby="tech-title"
       data-section="tecnologias"
       data-xml-id="sec-004"
     >
-      <h2 id="tech-title" class="section-title">Stack Tecnológico</h2>
-      <div class="tech-grid" role="list" aria-label="Tecnologías del stack">
-        <div class="tech-card" role="listitem" data-tech-category="frontend">
-          <span class="tech-logo" aria-hidden="true">🏗️</span>
-          <h3 class="tech-name">HTML5</h3>
-          <p class="tech-desc">Estructura semántica y accesibilidad WCAG 2.1</p>
-          <div class="tech-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de uso de HTML5: 95%">
-            <div class="tech-bar-fill" style="--level: 95%"></div>
-          </div>
+      <h2 id="tech-title" class="section-title">Instalaciones y Equipamiento</h2>
+      <div class="tech-grid" role="list" aria-label="Equipamiento de la clínica">
+        <div class="tech-card" role="listitem">
+          <span class="tech-logo" aria-hidden="true">🚑</span>
+          <h3 class="tech-name">Ambulancia</h3>
+          <p class="tech-desc">Traslado seguro para emergencias 24/7 en toda la ciudad.</p>
         </div>
-        <div class="tech-card" role="listitem" data-tech-category="frontend">
-          <span class="tech-logo" aria-hidden="true">🎨</span>
-          <h3 class="tech-name">CSS3</h3>
-          <p class="tech-desc">Grid, Flexbox, Container Queries, clamp()</p>
-          <div class="tech-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de uso de CSS3: 90%">
-            <div class="tech-bar-fill" style="--level: 90%"></div>
-          </div>
+        <div class="tech-card" role="listitem">
+          <span class="tech-logo" aria-hidden="true">🩻</span>
+          <h3 class="tech-name">Imagenología</h3>
+          <p class="tech-desc">Radiografía digital y ecografía doppler de alta resolución.</p>
         </div>
-        <div class="tech-card" role="listitem" data-tech-category="frontend">
-          <span class="tech-logo" aria-hidden="true">⚡</span>
-          <h3 class="tech-name">JavaScript</h3>
-          <p class="tech-desc">ES2023, módulos, Fetch API, DOM events</p>
-          <div class="tech-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de uso de JavaScript: 85%">
-            <div class="tech-bar-fill" style="--level: 85%"></div>
-          </div>
+        <div class="tech-card" role="listitem">
+          <span class="tech-logo" aria-hidden="true">🩸</span>
+          <h3 class="tech-name">Laboratorio</h3>
+          <p class="tech-desc">Equipos automatizados para hemogramas y perfiles bioquímicos.</p>
         </div>
-        <div class="tech-card" role="listitem" data-tech-category="backend">
-          <span class="tech-logo" aria-hidden="true">🟢</span>
-          <h3 class="tech-name">Node.js</h3>
-          <p class="tech-desc">API REST, Express, autenticación JWT</p>
-          <div class="tech-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Nivel de uso de Node.js: 78%">
-            <div class="tech-bar-fill" style="--level: 78%"></div>
-          </div>
+        <div class="tech-card" role="listitem">
+          <span class="tech-logo" aria-hidden="true">🛌</span>
+          <h3 class="tech-name">Internamiento</h3>
+          <p class="tech-desc">Zonas separadas para perros, gatos y pacientes infecciosos.</p>
         </div>
       </div>
     </section>
@@ -464,21 +400,19 @@
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
       <div class="footer-brand">
-        <span class="brand-icon" aria-hidden="true">⬡</span>
+        <span class="brand-icon" aria-hidden="true">🐾</span>
         <p class="footer-text">
-          <strong>TechGallery · IS093A</strong><br />
-          Facultad de Ingeniería de Sistemas · UNCP
+          <strong>Patitas Felices S.A.C.</strong><br />
+          Av. Huancavelica 1230, El Tambo - Huancayo
         </p>
       </div>
       <nav class="footer-nav" aria-label="Navegación del pie de página">
-        <a href="https://github.com/Sullit0" class="footer-link" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
         <a href="#contenido-principal" class="footer-link">Inicio</a>
-        <a href="#proyectos" class="footer-link">Proyectos</a>
+        <a href="#servicios" class="footer-link">Servicios</a>
+        <a href="#contacto" class="footer-link">Contacto</a>
       </nav>
       <p class="footer-copy">
-        <small>© 2026 IS093A - Semana 02 · Todos los derechos reservados</small>
+        <small>© 2026 Clínica Veterinaria Patitas Felices · Guía Práctica IS093A</small>
       </p>
     </div>
   </footer>
