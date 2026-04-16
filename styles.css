@@ -804,9 +804,9 @@ a { color: inherit; text-decoration: none; }
     grid-template-columns: 1fr;
     grid-template-areas:
       "hero"
+      "sidebar"
       "gallery"
       "tech"
-      "sidebar"
       "nosotros"
       "contacto";
   }
