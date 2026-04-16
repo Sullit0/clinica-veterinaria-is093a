@@ -146,8 +146,8 @@ a { color: inherit; text-decoration: none; }
   grid-template-areas:
     "hero      hero"
     "sidebar   gallery"
-    "sidebar   tech"
-    "sidebar   nosotros"
+    "tech      tech"
+    "nosotros  nosotros"
     "contacto  contacto";
   gap: var(--grid-gap);
   max-inline-size: var(--max-width);
